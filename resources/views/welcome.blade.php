@@ -4,7 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="./output.css" rel="stylesheet">
         <!-- <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script> -->
-        <title>My-BLOG</title>
+        <title>My-BLOG-blogdettaglio</title>
         <script src="https://cdn.tailwindcss.com"></script>
     
     <style>
@@ -52,7 +52,7 @@
 
         <nav class="bg-gray-800 p-4">
             <div class="container mx-auto flex justify-between items-center text-white relative">
-                <a href="#" class="font-bold text-xl">Il Tuo BLOG</a>
+                <a href="/" class="font-bold text-xl">Il Tuo BLOG</a>
                 <input type="checkbox" id="menu-toggle" class="absolute hidden">
                 <label for="menu-toggle"
                     class="hamburger-icon cursor-pointer md:hidden">
@@ -66,10 +66,10 @@
 
                 <div
                     class="mobile-menu md:flex md:space-x-4 absolute md:relative top-full right-0 md:top-auto md:right-auto bg-gray-700 md:bg-transparent w-full md:w-auto py-2 md:py-0 rounded-lg shadow-xl md:shadow-none z-20">
-                    <a href="#homepage"
+                    <a href="#"
                         class="block px-4 py-2 text-sm text-white hover:bg-gray-600 md:hover:bg-transparent">Homepage
                     </a>
-                    <a href="#section1"
+                    <a href="{{route('blogdettaglio')}}"
                         class="block px-4 py-2 text-sm text-white hover:bg-gray-600 md:hover:bg-transparent">Blog
                         Uno</a>
                     <a href="#section2"
@@ -108,7 +108,7 @@
                 <div class="p-6">
                     <h3 class="text-xl font-semibold mb-2">Blog Tipo 1</h3>
                     <p class="text-gray-700 mb-4">Breve descrizione del contenuto del blog B1. Clicca per maggiori dettagli.</p>
-                    <a href="#" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300">Dettagli</a>
+                    <a href="{{route('blogdettaglio')}}" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300">Dettagli</a>
                 </div>
             </div>
 

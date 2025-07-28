@@ -41,7 +41,7 @@
                 display: flex !important; /* Forza la visualizzazione come flex per desktop */
             }
         }
-/*             
+/*             no si puo' usare con laravel
         input[type="file"]::file-selector-button {
             @apply bg-blue-500 text-white py-2 px-4 rounded-md border-0 cursor-pointer hover:bg-blue-600 transition-colors duration-200 ease-in-out;
             } */
@@ -52,7 +52,7 @@
 
         <nav class="bg-gray-800 p-4">
             <div class="container mx-auto flex justify-between items-center text-white relative">
-                <a href="#" class="font-bold text-xl">Il Tuo BLOG</a>
+                <a href="/" class="font-bold text-xl">Il Tuo BLOG</a>
                 <input type="checkbox" id="menu-toggle" class="absolute hidden">
                 <label for="menu-toggle"
                     class="hamburger-icon cursor-pointer md:hidden">
@@ -66,7 +66,7 @@
 
                 <div
                     class="mobile-menu md:flex md:space-x-4 absolute md:relative top-full right-0 md:top-auto md:right-auto bg-gray-700 md:bg-transparent w-full md:w-auto py-2 md:py-0 rounded-lg shadow-xl md:shadow-none z-20">
-                    <a href="#homepage"
+                    <a href="#/welcome"
                         class="block px-4 py-2 text-sm text-white hover:bg-gray-600 md:hover:bg-transparent">Homepage
                     </a>
                     <a href="#section1"
@@ -85,22 +85,22 @@
         </nav>
 
         <header
-            class="bg-[url(/images/blog-684748_1280.jpg)] overflow-hidden header-bg relative text-white flex items-center justify-center min-h-[30rem] lg:min-h-[40rem] xl:min-h-[60rem] ">
+            class="bg-[url(/images/pencils-762555_1280.jpg)] overflow-hidden header-bg relative text-white flex items-center justify-center min-h-[30rem] lg:min-h-[40rem] xl:min-h-[60rem] ">
 
             <!-- <img src="sfondi-hd-1-1920x1080.jpg" alt="Immagine di esempio"
                 class="rounded-lg shadow-md w-full h-auto object-fill absolute "> -->
             <div class="absolute inset-0 bg-black opacity-50"></div>
             <div class="container mx-auto px-8 text-center z-10">
-                <h1 class="text-4xl lg:text-6xl font-bold mb-4">Il Tuo Blog</h1>
+                <h1 class="text-4xl lg:text-6xl font-bold mb-4">Il Tuo Blog in dettaglio</h1>
                 <p class="text-xl lg:text-2xl">Un modo semplice e pulito per
-                    gestire il Tuo Blog.</p>
+                    gestire il Tuo Blog in dettaglio.</p>
             </div>
         </header>
 
 
         <main class="container mx-auto px-4 py-12">
 
-
+    
 <section class="mb-16"> <h2 class="text-3xl font-bold text-center mb-8">Le Nostre Offerte Speciali</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div class="bg-white rounded-lg shadow-lg overflow-hidden">
